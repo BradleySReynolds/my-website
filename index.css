@@ -1,0 +1,431 @@
+:root {
+  --darkest-purple: #110115;
+  --dark-purple: #23092e;
+  --purple: #340552;
+  --light-purple: #611fa3;
+  --lightest-purple: #6e6094;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  font-size: 16px;
+
+  padding: 24px;
+}
+/* GLOW EFFECT */
+
+.glow {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px var(--lightest-purple), 0 0 20px var(--darkest-purple),
+      0 0 30px var(--darkest-purple), 0 0 40px var(--darkest-purple),
+      0 0 50px var(--light-purple), 0 0 60px var(--light-purple),
+      0 0 70px var(--light-purple);
+  }
+  to {
+    text-shadow: 0 0 20px var(--lightest-purple),
+      0 0 30px var(--lightest-purple), 0 0 40px var(--lightest-purple),
+      0 0 50px var(--lightest-purple), 0 0 60px var(--lightest-purple),
+      0 0 70px var(--lightest-purple), 0 0 80px var(--lightest-purple);
+  }
+}
+/* NAVIGATION */
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
+
+  background-color: var(--dark-purple);
+}
+
+.nav--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav--list-item {
+  padding: 0 12px;
+  font-size: 24px;
+}
+
+.nav--list-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav--list-link:hover {
+  color: var(--light-purple);
+  transition: 0.5s;
+}
+/* INTRODUCTION */
+
+.intro--img {
+  position: fixed;
+  z-index: -99;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.intro--info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+
+  height: 100vh;
+  width: 100vw;
+
+  color: white;
+}
+
+.intro--head {
+  font-size: 72px;
+  letter-spacing: 8px;
+}
+
+.intro--para {
+  margin: 24px;
+  font-size: 32px;
+  letter-spacing: 4px;
+}
+
+.intro--icon-list {
+  display: flex;
+  list-style: none;
+}
+
+.intro--icon-list--item {
+  margin: 0 12px;
+
+  color: white;
+  font-size: 32px;
+}
+
+.intro--button {
+  margin: 48px;
+
+  height: auto;
+  width: auto;
+
+  background-color: transparent;
+  border: none;
+
+  color: white;
+  font-size: 24px;
+}
+
+.intro--button:hover {
+  cursor: pointer;
+}
+
+/* ABOUT ME SECTION */
+
+#about-me {
+  color: white;
+
+  position: relative;
+  top: 100vh;
+
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(
+    to bottom right,
+    var(--darkest-purple),
+    var(--purple),
+    var(--light-purple)
+  );
+}
+
+/* TECHNOLOGY STACK */
+
+#tech-stack {
+  color: white;
+
+  position: relative;
+  top: 100vh;
+  width: auto;
+
+  padding: 48px;
+
+  background: linear-gradient(
+    to bottom left,
+    var(--light-purple),
+    var(--purple),
+    var(--dark-purple)
+  );
+}
+
+.tech-stack--section {
+  display: flex;
+  padding: 48px;
+}
+
+.tech-stack--section-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  flex-basis: 50%;
+}
+
+.tech-stack--para {
+  max-width: 625px;
+  font-size: 1vw;
+}
+
+.tech-stack--section-imgcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.tech-stack--section-img-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 24px;
+}
+
+.tech-stack--img {
+  height: 6.5vw;
+  width: 6.5vw;
+
+  padding: 8px;
+}
+
+/* PROJECTS */
+#projects {
+  color: white;
+
+  position: relative;
+  top: 100vh;
+
+  height: 100%;
+  width: 100%;
+
+  padding: 48px;
+
+  background: linear-gradient(
+    to top left,
+    var(--light-purple),
+    var(--purple),
+    var(--dark-purple)
+  );
+}
+
+.projects--container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects--project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 24px;
+
+  border: 1px solid white;
+  border-radius: 5px;
+
+  max-width: 650px;
+}
+
+.projects--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects--head {
+  margin: 12px;
+}
+
+.pojects--para {
+  margin: 12px;
+  max-width: 450px;
+  text-align: center;
+}
+
+.projects-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.projects--link {
+  color: white;
+  text-decoration: none;
+
+  background-color: transparent;
+}
+
+.view {
+  border: 1px solid white;
+  color: white;
+}
+
+.code {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.view:hover,
+.code:hover {
+  background-color: white;
+  color: var(--light-purple);
+  transition: 0.5s;
+}
+
+.projects--img {
+  height: 250px;
+  width: 350px;
+
+  margin: 24px;
+
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* NAVIGATION */
+  header {
+    width: 100%;
+  }
+
+  .nav--list {
+    justify-content: space-around;
+  }
+
+  .nav--list-item {
+    padding: 0 8px;
+    font-size: 18px;
+  }
+
+  /* INTRODUCTION PAGE */
+  .intro--head {
+    font-size: 32px;
+  }
+
+  .intro--para {
+    margin: 24px;
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+
+  .intro--icon-list--item {
+    margin: 0 12px;
+
+    color: white;
+    font-size: 32px;
+  }
+
+  .intro--icon-list--item {
+    margin: 0 12px;
+    font-size: 24px;
+  }
+
+  .intro--button {
+    height: 30px;
+    width: 30px;
+  }
+
+  .intro--button {
+    margin: 48px;
+
+    height: auto;
+    width: auto;
+
+    background-color: transparent;
+    border: none;
+
+    color: white;
+    font-size: 20px;
+  }
+
+  /* ABOUT ME PAGE */
+  .about-me--img {
+    border: var(--lightest-purple) 3px solid;
+    border-radius: 5px;
+
+    max-height: 175px;
+    max-width: 350px;
+
+    min-width: 100px;
+    min-height: 50px;
+  }
+
+  .about-me--info-para {
+    min-width: 300px;
+
+    font-size: 14px;
+  }
+
+  .about-me--section {
+    flex-direction: column;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  /* TECHNOLOGY STACK */
+  .tech-stack--section {
+    flex-direction: column;
+  }
+
+  .tech-stack--para {
+    min-width: 450px;
+
+    font-size: 14px;
+  }
+
+  .tech-stack--section-imgcon {
+    flex-wrap: wrap;
+  }
+
+  .tech-stack--img {
+    height: 75px;
+    width: 75px;
+  }
+}
