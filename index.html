@@ -105,6 +105,26 @@
 
       <section id="about-me">
         <h2 class="header">About Me</h2>
+        <div class="about-me--container">
+          <div class="about-me--info">
+            <h2 class="about-me--head">Hello, I am Bradley Reynolds</h2>
+            <p class="about-me--para">
+              I am an aspiring front-end web developer. I am an self-taught
+              programmer with a passion for solving complex problems.
+            </p>
+            <p class="about-me--download">
+              Download my resume
+              <a
+                class="about-me--download-link"
+                href="images/bradley-reynolds-resume.PDF"
+                name="resume-downlaod"
+                download
+                >here</a
+              >.
+            </p>
+          </div>
+          <img class="about-me--img" src="images/me.webp" />
+        </div>
       </section>
 
       <section id="tech-stack">
@@ -126,7 +146,7 @@
                 src="./images/html.webp"
                 alt="HTML Logo"
               />
-              <p>HTML5</p>
+              <p class="tech-stack--img-cap">HTML5</p>
             </div>
             <div class="tech-stack--section-img-item">
               <img
@@ -134,7 +154,7 @@
                 src="./images/css-3.webp"
                 alt="CSS Logo"
               />
-              <p>CSS3</p>
+              <p class="tech-stack--img-cap">CSS3</p>
             </div>
             <div class="tech-stack--section-img-item">
               <img
@@ -142,7 +162,7 @@
                 src="./images/js.webp"
                 alt="JavaScript Logo"
               />
-              <p>JavaScript</p>
+              <p class="tech-stack--img-cap">JavaScript</p>
             </div>
           </div>
         </div>
@@ -165,7 +185,7 @@
                 src="./images/react.webp"
                 alt="React Logo"
               />
-              <p>React</p>
+              <p class="tech-stack--img-cap">React</p>
             </div>
             <div class="tech-stack--section-img-item">
               <img
@@ -173,7 +193,7 @@
                 src="./images/nodejs.webp"
                 alt="Node.js Logo"
               />
-              <p>Node.js</p>
+              <p class="tech-stack--img-cap">Node.js</p>
             </div>
             <div class="tech-stack--section-img-item">
               <img
@@ -181,7 +201,7 @@
                 src="./images/jquery.webp"
                 alt="jQuery Logo"
               />
-              <p>jQuery</p>
+              <p class="tech-stack--img-cap">jQuery</p>
             </div>
             <div class="tech-stack--section-img-item">
               <img
@@ -189,7 +209,7 @@
                 src="./images/bootstrap.webp"
                 alt="Bootstrap Logo"
               />
-              <p>Bootstrap</p>
+              <p class="tech-stack--img-cap">Bootstrap</p>
             </div>
           </div>
         </div>
@@ -211,7 +231,7 @@
                 src="./images/git.webp"
                 alt="Git Logo"
               />
-              <p>Git</p>
+              <p class="tech-stack--img-cap">Git</p>
             </div>
             <div class="tech-stack--section-img-item">
               <img
@@ -219,7 +239,7 @@
                 src="./images/github.webp"
                 alt="GitHub Logo"
               />
-              <p>GitHub</p>
+              <p class="tech-stack--img-cap">GitHub</p>
             </div>
           </div>
         </div>
@@ -300,7 +320,12 @@
                   href="build/markdown-index.html"
                   ><button class="projects-btn view">View Now</button></a
                 >
-                <button class="projects-btn code">Source Code</button>
+                <a
+                  name="product-landing-page-source"
+                  class="projects--link"
+                  href="https://github.com/BradleySReynolds/freecodecamp-front-end-development-libraries/tree/main/parse-markdown"
+                  ><button class="projects-btn code">Source Code</button></a
+                >
               </div>
             </div>
             <img
