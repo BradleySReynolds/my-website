@@ -138,7 +138,7 @@ header {
 
 .about-me--img {
   height: 300px;
-  width: auto;
+  width: 226px;
   margin: 24px;
 
   border: 3px solid var(--light-purple);
@@ -471,7 +471,7 @@ header {
 
   .tech-stack--img {
     height: 7vh;
-    width: auto;
+    width: 7vh;
   }
 
   .tech-stack--img-cap {
@@ -491,7 +491,7 @@ header {
 
   .projects--img {
     height: 20vh;
-    width: auto;
+    width: 31.5vh;
 
     margin: 24px;
 
@@ -545,7 +545,7 @@ header {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   /* NAVIGATION */
   .nav--list-item {
     font-size: 10px;
@@ -559,6 +559,11 @@ header {
   .about-me--para {
     font-size: 12px;
   }
+
+  .about-me--img {
+    height: 200px;
+    width: 150px;
+  }
   /*  TECH STACK */
 
   .tech-stack--section {
@@ -567,7 +572,7 @@ header {
   }
 
   .tech-stack--head {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .tech-stack--section-img-item {
