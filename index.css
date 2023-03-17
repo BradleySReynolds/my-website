@@ -307,7 +307,7 @@ header {
   padding: 48px;
 
   background: linear-gradient(
-    to top left,
+    to bottom left,
     var(--light-purple),
     var(--purple),
     var(--dark-purple)
